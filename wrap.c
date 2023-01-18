@@ -275,7 +275,7 @@ static const luaL_Reg Rcrc32[] = {
 	{NULL, NULL}
 };
 
-LUALIB_API int luaopen_crc32(lua_State *L) {
+LUALIB_API int luaopen_com_logiceditor_fork_crc32(lua_State *L) {
 	create_meta(L,crc32_reg_name, crc32_meta_reg);
 	
 #if LUA_VERSION_NUM < 502
