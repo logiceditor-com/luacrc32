@@ -1,13 +1,13 @@
 Lua module for CRC-32 calculation implemented in C. 
 
-Tested with Lua 5.1, 5.2 and 5.3.
+Tested with Lua 5.1, 5.2, 5.3 and 5.4.
 
 Also included is a pure Lua implementation of the same API, using
 https://github.com/davidm/lua-digest-crc32lua.
 
 
 # Module API
-`local crc32 = require 'crc32'`
+`local crc32 = require 'com.logiceditor.fork.crc32'`
 
 * **crc32.crc32** = function (crc_in, data)
 	* **crc_in** is input CRC. It can be either a Lua number, or a string.
