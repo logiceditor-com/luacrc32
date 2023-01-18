@@ -2,7 +2,7 @@
 local _G,arg,assert,getmetatable,package,require,string,type
     = _G,arg,assert,getmetatable,package,require,string,type
 
-local C32 = require'crc32'
+local C32 = require'com.logiceditor.fork.crc32'
 
 if arg[-1] ~= '-lcrc32' then  -- work around debian dh_lua test calling with '-lcrc32', which sets _G.crc32
 	assert(_G.crc32==nil, 'do not pollute global env')
